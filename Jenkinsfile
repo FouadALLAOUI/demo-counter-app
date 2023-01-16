@@ -14,30 +14,38 @@ pipeline{
                 }
             }
         }
-        
-        stage('UNIT Testing'){
+
+        stage('UNIT testing'){
             
             steps{
-                script{                   
-                   sh 'mvn test'
+                
+                script{
+                    
+                    sh 'mvn test'
                 }
             }
         }
-        /*
-        stage('Integration Testing'){
+
+        stage('Integration testing'){
+            
             steps{
-                sh 'mvn verify -DskipUnitTests'
+                
+                script{
+                    
+                    sh 'mvn verify -DskipUnitTests'
+                }
             }
         }
-
         stage('Maven build'){
-            steps{             
-                script{                    
+            
+            steps{
+                
+                script{
+                    
                     sh 'mvn clean install'
                 }
             }
         }
-        */
     }
         
 }
