@@ -21,7 +21,7 @@ pipeline{
                 
                 script{
                     //echo 'Hello World ==============================********************========================== '                     
-                    bat 'mvn test'
+                    sh 'mvn test'
                 }
             }
         }
