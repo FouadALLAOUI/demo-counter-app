@@ -20,12 +20,12 @@ pipeline{
             steps{
                 
                 script{
-                    echo 'Hello World ==============================********************========================== '                     
-                    sh 'mvn test'
+                    //echo 'Hello World ==============================********************========================== '                     
+                    bat 'mvn test'
                 }
             }
         }
-
+        /*
         stage('Integration testing'){
             
             steps{
@@ -46,6 +46,7 @@ pipeline{
                 }
             }
         }
+        */
     }
         
 }
