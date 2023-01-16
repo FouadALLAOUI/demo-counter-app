@@ -9,7 +9,7 @@ pipeline{
             steps{
                 
                 script{
-                    
+                                       
                     git 'https://github.com/FouadALLAOUI/demo-counter-app.git'
                 }
             }
@@ -20,7 +20,7 @@ pipeline{
             steps{
                 
                 script{
-                    
+                    echo 'Hello World ==============================********************========================== '                     
                     sh 'mvn test'
                 }
             }
