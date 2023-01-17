@@ -28,18 +28,7 @@ pipeline{
                 }
             }
         }
-        /*
-         stage('Maven build'){
-            
-            steps{
-                
-                script{
-                    
-                    sh 'mvn clean package'
-                }
-            }
-        }
-
+        
         stage('Integration testing'){
             
             steps{
@@ -50,7 +39,7 @@ pipeline{
                 }
             }
         }
-
+        /*
         stage('Maven build'){
             
             steps{
@@ -58,6 +47,17 @@ pipeline{
                 script{
                     
                     sh 'mvn clean install'
+                }
+            }
+        }
+        
+        stage('Maven build'){
+            
+            steps{
+                
+                script{
+                    
+                    sh 'mvn clean package'
                 }
             }
         }
