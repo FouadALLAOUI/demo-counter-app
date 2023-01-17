@@ -39,7 +39,7 @@ pipeline{
                 }
             }
         }
-        /*
+        
         stage('Maven build'){
             
             steps{
@@ -50,7 +50,7 @@ pipeline{
                 }
             }
         }
-        
+        /*
         stage('Maven build'){
             
             steps{
