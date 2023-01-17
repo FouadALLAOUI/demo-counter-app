@@ -14,18 +14,28 @@ pipeline{
                 }
             }
         }
-        
-        stage('UNIT testing'){
+
+        stage('Maven build'){
             
             steps{
                 
                 script{
-                    //echo 'Hello World ==============================********************========================== '                     
-                    sh 'mvn test'
+                    
+                    sh 'mvn clean package'
                 }
             }
         }
         /*
+        stage('UNIT testing'){
+            
+            steps{
+                
+                script{                  
+                    sh 'mvn test'
+                }
+            }
+        }
+        
         stage('Integration testing'){
             
             steps{
