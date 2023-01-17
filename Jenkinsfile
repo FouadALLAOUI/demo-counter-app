@@ -14,7 +14,7 @@ pipeline{
                 }
             }
         }
-
+        /*
         stage('UNIT testing'){
             
             steps{
@@ -25,7 +25,7 @@ pipeline{
                 }
             }
         }
-        /*
+        
         stage('Integration testing'){
             
             steps{
@@ -36,6 +36,7 @@ pipeline{
                 }
             }
         }
+        
         stage('Maven build'){
             
             steps{
